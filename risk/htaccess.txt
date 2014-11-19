@@ -1,0 +1,18 @@
+Options +FollowSymLinks
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	RewriteRule ^about([\/|])$ about.php [L,QSA]
+	RewriteRule ^maps([\/|])$ maplist.php [L,QSA]
+	RewriteRule ^players([\/|])$ memberlist.php [L,QSA]
+	RewriteRule ^game/new([\/|])$ newgame.php [L,QSA]
+	RewriteRule ^games/joined([\/|])$ yourgames.php [L,QSA]
+	RewriteRule ^games([\/|])$ index.php [L,QSA]
+	RewriteRule ^game/lobby/([0-9]+)-(.+)$ game.php?gid=$1 [L,QSA]
+	RewriteRule ^game/([0-9]+)-(.+)$ game/?gid=$1 [L,QSA]
+	RewriteRule ^maps/([0-9]+)-(.+)$ map.php?map=$1 [L,QSA]
+
+	<IfModule mod_env.c>
+		SetEnv SEO_SUPPORT 1
+	</IfModule>
+</IfModule>

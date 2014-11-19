@@ -1,0 +1,53 @@
+<section>
+	<h2>About</h2>
+
+	<h3>The Game</h3>
+	<p>The aim of this game is to fulfill the mission assigned to you and to prevent other players from fulfilling theirs. Every turn a player may choose to either fortify their territories or attack enemy territories.</p>
+	<p>Choosing to fortify your territories gives you one unit per three territories (minimum of three) to distribute as you please.
+	<p>When starting an attack you will be asked how many units you want to attack with (maximum of three) and how many units you would wish to transfer into the territory should you win. Combat is fairly straightforward, the attacker rolls up to three dice and the defender rolls up to two dice. The highest rolls are then compared. If the attacker's highest roll is higher than the defender's highest roll, the defender will lose a unit and vise versa. If the attacker and defender rolled more than one die, their second highest rolls will then be compared in the same way. <em>Note that the defender wins ties.</em> After attacking you may decide to move up to seven units between your territories, doing so will make it impossible to attack until your next turn.</p>
+	<p>Upon ending your turn, the system will check if you have accomplished your mission. If you have, the game will end and everyone else will lose one point to you.</p>
+
+	<h3>AutoRoll</h3>
+	<p>AutoRoll governs defensive dice rolls, it is enabled by default and can be turned off in the Settings tab. Be aware that turning off AutoRoll doesn't completely disable it. If you only have one unit left or if the attacker's dice roll is 1, AutoRoll will take action even when turned off.</p>
+	<p>AutoRoll will decide to roll two dice (if possible) in the following situations:</p>
+	<ol>
+		<li>The attacker has only used one die.</li>
+		<li>The average of the highest two dice rolls is equal to or less than 3.5. (Note that this is the average roll for a six-sided die.)</li>
+		<li>The second highest dice roll (the lowest roll you have to defend against) is less than 4. (Because trading one for one is better than simply losing one.)</li>
+	</ol>
+
+	<h3>Cards</h3>
+	<p>At the end of your turn, if you have conquered a territory, you will receive a random card. Combinations of three cards can be turned in for additional units before attacking. You can only have five cards at a time. These are the different cards:</p>
+	<p><img src="{$URL['base']}/resources/game/c_art.png" alt="Artillery" class="card" /> Artillery <img src="{$URL['base']}/resources/game/c_inf.png" alt="Infantry" class="card" /> Infantry <img src="{$URL['base']}/resources/game/c_cav.png" alt="Cavalry" class="card" /> Cavalry <img src="{$URL['base']}/resources/game/c_jok.png" alt="Wildcard" class="card" /> Wildcard (There can only be two of these in a game at a time. They can be used instead of another card.)</p>
+	<table>
+		<thead>
+			<tr><th>Combination</th><th>Units</th></tr>
+		</thead>
+		<tbody>
+			<tr><td>3 Artillery</td><td>4</td></tr>
+			<tr><td>3 Infantry</td><td>6</td></tr>
+			<tr><td>3 Cavalry</td><td>8</td></tr>
+			<tr><td>1 Artillery 1 Infantry 1 Cavalry</td><td>10</td></tr>
+		</tbody>
+	</table>
+	<h3>Browsers</h3>
+	<p>This game does not work in all browsers or browser versions, as such it is recommended to always keep your browser up to date.</p>
+	<table>
+		<thead>
+			<tr><th>Browser</th><th>Version</th><th>Notes</th></tr>
+		</thead>
+		<tbody>
+			<tr><td>Google Chrome</td><td>34</td><td>Not tested.</td></tr>
+			<tr class="greenbg"><td>Google Chrome</td><td>35</td><td>Works.</td></tr>
+			<tr><td>Internet Explorer</td><td>10</td><td>Not tested.</td></tr>
+			<tr class="greenbg"><td>Internet Explorer</td><td>11</td><td>Works.</td></tr>
+			<tr><td>Mozilla Firefox</td><td>29</td><td>Not tested.</td></tr>
+			<tr class="greenbg"><td>Mozilla Firefox</td><td>30</td><td>Works.</td></tr>
+			<tr><td>Opera</td><td>11</td><td>Not tested.</td></tr>
+			<tr class="greenbg"><td>Opera</td><td>12</td><td>Works.</td></tr>
+		</tbody>
+	</table>
+
+	<h3>Credits</h3>
+	<p>Wikipedia, where I got all these flags.</p>
+</section>

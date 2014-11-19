@@ -1,0 +1,256 @@
+body {
+	background: url('./bg.png') no-repeat left top;
+}
+
+#wrap {
+	/*min-width: 750px;*/
+	max-width: 1200px;
+	width: 80%;
+	margin: 1em auto;
+	background-color: rgba(0,0,0,0.5);
+	border: 2px solid black;
+	padding: 0.75em;
+}
+
+@media(max-width: 600px) {
+	#wrap {
+		width: 90%;
+	}
+
+	nav ul {
+		display: block;
+	}
+
+	nav li {
+		display: block;
+		width: auto;
+	}
+}
+
+#innerwrap {
+	background-color: white;
+	border: 1px solid black;
+}
+
+section,header,footer {
+	padding: 0.5em;
+}
+
+section {
+	margin: 0.5em;
+	border: 1px solid #900000;
+	border-top: none;
+	border-bottom: none;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.login {
+	padding: 2px;
+	min-width: 200px;
+}
+
+dt {
+	width: 150px;
+	font-weight: bold;
+	float: left;
+	height: 20px;
+}
+
+dd {
+	height: 20px;
+	white-space: nowrap;
+}
+
+.login input {
+	width: 95px;
+}
+
+.dropdown .login dl {
+	margin-left: 0;
+}
+
+dl {
+	margin-left: 10px;
+}
+
+.dropdown .login dt {
+	width: 100px;
+}
+
+dl span {
+	font-size: 90%;
+}
+
+li .login input[type="submit"] {
+	margin: 0 auto;
+	display: block;
+}
+
+p {
+	margin-top: 0.5em;
+}
+
+li {
+	margin-left: 25px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 0.5em 0;
+}
+
+#memberlist td {
+	width: 16%;
+}
+
+.crumbs {
+	text-align: center;
+	padding: 0 5px;
+}
+
+.crumbs a {
+	color: white;
+}
+
+.crumbs a:hover {
+	font-weight: bold;
+}
+
+.crumbs .back,.left {
+	float: left;
+}
+
+.crumbs .forward,.right {
+	float: right;
+}
+
+.crumbs .inactive {
+	color: black;
+	cursor: default;
+}
+
+.crumbs .inactive:hover {
+	font-weight: normal;
+}
+
+var {
+	font-style: normal;
+}
+
+h1 a:hover {
+	text-decoration: none;
+}
+
+em {
+	font-weight: bold;
+	font-style: normal;
+}
+
+h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 100%;
+	font-weight: bold;
+	margin-top: 0.5em;
+}
+
+.territories li {
+	list-style: none;
+	margin: 2px 0;
+}
+
+.small {
+	font-size: 12.8px;
+	font-weight: normal;
+}
+
+th div {
+	font-size: 90%;
+	float: right;
+}
+
+th div a:hover {
+	text-decoration: none;
+	color: black;
+}
+
+#gamelist td {
+	width: 25%;
+}
+
+#gamelist td img {
+	max-height: 1em;
+	vertical-align: middle;
+}
+
+.noliststyle li {
+	list-style: none;
+	margin-left: 10px;
+}
+
+.profiletext {
+	margin-top: 0.5em;
+	padding-left: 1em;
+}
+
+#chat .window {
+	height: 5em;
+}
+
+.game_started {
+	background-color: #B0FFB0;
+}
+
+.game_ended {
+	background-color: #B0B0FF;
+}
+
+.card {
+	height: 100px;
+}
+
+.greenbg {
+	background-color: #50FF50;
+}
+
+.redbg {
+	background-color: #FF5050;
+}
+
+#editProfile {
+	margin-left: 5px;
+}
+
+article div.article {
+	padding: 0 5px;
+	border: 1px solid #900000;
+	border-top: none;
+	border-bottom: none;
+}
+
+textarea {
+	display: block;
+	width: 100%;
+	height: 4em;
+}
+
+.dropdown a {
+	display: block;
+}
+
+.avatar {
+	float: left;
+	margin-right: 5px;
+	width: 80px;
+	height: 80px;
+}
+
+.wide input[type="text"], .wide input[type="password"] {
+	display: block;
+	width: 100%;
+}

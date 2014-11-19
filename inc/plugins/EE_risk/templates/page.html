@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>{$mybb->settings['bbname']} - {$title}</title>
+	<script src="{$URL['base']}/resources/jquery.js"></script>
+	<script src="{$URL['base']}/resources/spoiler.js"></script>
+	<script src="{$URL['base']}/resources/settings.js"></script>
+	<link href="{$URL['base']}/resources/main.css" rel="stylesheet" type="text/css" />
+	<link href="{$URL['base']}/resources/style.css" rel="stylesheet" type="text/css" />
+	<link href="{$URL['base']}/resources/favicon.png" rel="shortcut icon" type="image/png" />
+	{$head}
+</head>
+<body>
+<div id="wrap">
+	<div id="innerwrap">
+		<header>
+			<h1><a href="{$URL['base']}">World Domination &beta;</a></h1>
+			<nav>
+				<ul>
+					<li><a href="{$mybb->settings['bburl']}/">Home</a></li>
+					<li><a href="{$URL['GAMES']}">Games</a></li>
+					<li><a href="{$URL['YOURGAMES']}">Your Games</a></li>
+					<li><a href="{$URL['MAPS']}">Maps</a></li>
+					<li><a href="{$URL['MEMBERS']}">Members</a></li>
+					<li><a href="{$URL['ABOUT']}">About</a></li>
+				</ul>
+			</nav>
+			<span class="right small">Logged in as {$user['profilelink']}.</span>
+		</header>
+		{$page}
+		<footer>
+			<p>&copy; 2012-{$date} <a href="http://malusluminis.webs.com/">Evil Eye</a>.</p>
+		</footer>
+	</div>
+</div>
+</body>
+</html>

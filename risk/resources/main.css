@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 100%;
+}
+
+a {
+	color: #900000;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+nav {
+	background-color: #900000;
+	color: white;
+	border: 1px solid #900000;
+	border-radius: 5px;
+	padding: 0 2px;
+}
+
+nav ul {
+	display: table-row;
+}
+
+nav li {
+	display: table-cell;
+	width: 1%;
+	font-weight: bold;
+	height: 25px;
+	margin: 0;
+}
+
+nav li a {
+	white-space: nowrap;
+	display: block;
+	color: white;
+	font-weight: bold;
+	padding: 2px;
+	height: 21px;
+	text-align: center;
+}
+
+nav li a:hover {
+	background-color: white;
+	color: #900000;
+	text-decoration: none;
+}
+
+.error {
+	font-weight: bold;
+	color: #7C0000;
+}
+
+table,tr,td,th {
+	border-bottom: 1px solid #900000;
+}
+
+td, th {
+	padding: 0 3px;
+	text-align: left;
+}
+
+.territories li {
+	background: no-repeat left 3px;
+	background-size: 20px;
+	padding-left: 25px;
+}
+
+button, input[type="submit"], input[type="button"] {
+	background-color: #900000;
+	color: white;
+	border: 1px solid #900000;
+	border-radius: 5px;
+	padding: 2px;
+	font-weight: bold;
+	cursor: pointer;
+	margin: 2px;
+}
+
+button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+	background-color: white;
+	color: #900000;
+}
+
+.loading {
+	cursor: wait;
+}
+
+.card {
+	display: inline-block;
+	border: 2px solid #900000;
+	border-radius: 5px;
+	float: none;
+	vertical-align: middle;
+}

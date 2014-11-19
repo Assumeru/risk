@@ -1,0 +1,55 @@
+#chat .window {
+	border: 1px solid #900000;
+	overflow: auto;
+}
+
+#chat .input {
+	margin-right: 130px;
+	padding-top: 3px;
+}
+
+#chat form {
+	margin-top: 3px;
+}
+
+#chat input[type=text] {
+	padding: 2px;
+	border: 1px solid #900000;
+	font-size: 1.25em;
+	width: 100%;
+}
+
+#chat input[type=submit] {
+	font-size: 1.25em;
+	width: 120px;
+	float: right;
+}
+
+#chat p {
+	padding: 3px;
+	margin: 0;
+}
+
+#chat p:nth-child(even) {
+	background-color: rgba(0,0,0,0.15);
+}
+
+#chat time {
+	font-family: monospace;
+	font-size: 75%;
+	color: #444444;
+}
+
+#chat a {
+	font-weight: bold;
+}
+
+#chat a:hover {
+	text-decoration: none;
+	color: black;
+}
+
+#chat p button {
+	margin: 0;
+	padding: 0;
+}

@@ -1,0 +1,10 @@
+<h2>{$game['name']}</h2>
+<h3>Map: <a href="{$url}">{$mapTypes[$game['map']]['name']}</a></h3>
+<h3>Players</h3>
+<ul class="noliststyle">
+{$playerList}
+</ul>
+<form method="post">
+{$leavejoin}
+</form>
+{$startgame}

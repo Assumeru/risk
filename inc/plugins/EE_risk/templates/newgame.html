@@ -1,0 +1,13 @@
+<section>
+	<h2>New Game</h2>
+	<form method="post">
+		<dl>
+			<dt>Name:</dt><dd><input type="text" name="newgame_name" maxlength="128" value="{$gameName}" required /> <span>(Must be at least 4 characters.)</span></dd>
+			<dt>Map:</dt><dd><select name="newgame_map" required>{$maps}</select></dd>
+			<dt>Colour:</dt><dd><select name="newgame_color" required>{$colors}</select> <span>(Your colour.)</span></dd>
+			<dt>Password:</dt><dd><input type="password" name="newgame_password" value="{$gamePassword}" /> <span>(Optional password required to join.)</span></dd>
+		</dl>
+		<input type="submit" value="Create game" />
+	</form>
+	{$errors}
+</section>

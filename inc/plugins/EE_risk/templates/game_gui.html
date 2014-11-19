@@ -1,0 +1,108 @@
+<div id="wrapper">
+	<div id="innerWrapper">
+		<h1><!-- Game name --></h1>
+		<nav>
+			<ul>
+				<li><a href="{$URL['base']}">Home</a></li>
+				<li><a href="#players">Players</a></li>
+				<li><a href="#territories">Territories</a></li>
+				<li><a href="#regions">Regions</a></li>
+				<li><a href="#cards">Cards</a></li>
+				<li><a href="#chat">Chat<span class="number"></span></a></li>
+				<li><a href="#log">Combat Log<span class="number"></span></a></li>
+				<li><a href="#settings">Settings</a></li>
+			</ul>
+		</nav>
+		<div id="tabs">
+			<section id="tabPlayers">
+				<table>
+					<thead>
+						<tr>
+							<th>Player</th>
+							<th>Territories</th>
+							<th>Units</th>
+							<th>Units per Turn</th>
+						</tr>
+					</thead>
+					<tbody>
+					<!-- Players -->
+					</tbody>
+				</table>
+			<!-- Mission -->
+			</section>
+			<section id="tabTerritories">
+				<table>
+					<thead>
+						<tr>
+							<th>Flag</th>
+							<th>Territory</th>
+							<th>Player</th>
+							<th>Units</th>
+							<th>Regions</th>
+						</tr>
+					</thead>
+					<tbody>
+					<!-- Territories -->
+					</tbody>
+				</table>
+			</section>
+			<section id="tabRegions">
+				<ul>
+				<!-- Regions -->
+				</ul>
+			</section>
+			<section id="tabNation">
+			<!-- Selected nation -->
+			</section>
+			<section id="tabCards">
+				<div></div>
+			</section>
+			<section id="chat">
+				<div class="window">
+				<!-- Messages -->
+				</div>
+				<form method="post">
+					<input value="Submit" name="chat" type="submit" />
+					<div class="input">
+						<input maxlength="255" value="" type="text" />
+					</div>
+				</form>
+			</section>
+			<section id="tabLog">
+				<div></div>
+			</section>
+			<section id="tabSettings">
+				<label><input type="checkbox" /> AutoRoll</label>
+				<p>With AutoRoll enabled the system will decide the number of dice used in defense. If the attacker only attacks with one die, you will defend with two. If the average of the highest two attacking dice rolls is equal to or less than 3.5, you will defend with two dice. If the second highest attacking die is less than 4, you will defend with two dice. <em>Note</em>, if you can only defend with one die, or if the attacker rolls only one die and it's 1, the system will roll for you.</p>
+				<label><input type="checkbox" /> Chat scrolling</label>
+				<p>Enable this if you want the chat to automatically scroll down.</p>
+				<label><input type="checkbox" /> Combat log scrolling</label>
+				<p>Enable this if you want the combat log to automatically scroll down.</p>
+				<label><input type="radio" name="unitgraphics" value="icon" /> Default unit graphics</label>
+				<p>Enable this if you want to show unit icons on the map.</p>
+				<label><input type="radio" name="unitgraphics" value="number" /> Numerical unit graphics</label>
+				<p>Enable this if you want to show unit numbers on the map.</p>
+				<label><input type="radio" name="unitgraphics" value="off" /> No unit graphics</label>
+				<p>Enable this if you don't want to show units on the map.</p>
+			</section>
+		</div>
+		<footer>
+			<ul id="footer">
+			<!-- Footer -->
+			</ul>
+		</footer>
+	</div>
+</div>
+<div id="map">
+	<div id="mapScroller">
+		<div id="mapWrapper">
+			<!-- SVG -->
+		</div>
+	</div>
+	<div id="mapScale">
+		<input type="range" min="250" max="1750" id="mapScaleSlider" value="495" />
+	</div>
+</div>
+<div id="overlay">
+	<section id="overlay_message"></section>
+</div>
